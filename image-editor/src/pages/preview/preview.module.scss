@@ -1,0 +1,760 @@
+/*=============================================
+= recover-section CSS
+=============================================*/
+.recoverSection {
+    padding: 92px 0 100px;
+
+    .container {
+        max-width: 1250px;
+    }
+
+    .recoverMainCtn {
+        display: flex;
+        align-items: center;
+        gap: 0;
+
+
+        .recoverSpace {
+            padding-right: 172px;
+        }
+
+        .recoverCtn {
+            span {
+                color: #D64011;
+                font-family: 'Satoshi';
+                font-size: 14px;
+                font-weight: 700;
+                padding: 6px 18.6px;
+                background: #FED4C6;
+                border-radius: 4px;
+                display: inline-block;
+                margin-bottom: 24px;
+                line-height: 1.15;
+            }
+
+            h3 {
+                color: #181D20;
+                font-family: 'Satoshi';
+                font-size: 32px;
+                font-weight: 700;
+                letter-spacing: -0.64px;
+                width: 100%;
+                max-width: 466px;
+                margin-bottom: 12px;
+            }
+
+            p {
+                color: #2A2A33;
+                font-family: 'Satoshi';
+                font-size: 18px;
+                font-weight: 500;
+                width: 100%;
+                max-width: 466px;
+                line-height: 1.4;
+                margin-bottom: 40px;
+            }
+
+            .recoverBtn a {
+                color: #FFF;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1.12;
+                border-radius: 8px;
+                font-family: 'Satoshi';
+                padding: 14px 68.3px;
+                background: #8256FF;
+            }
+
+        }
+
+        &:first-child {
+            margin-bottom: 80px;
+        }
+    }
+
+    .recoverImg img {
+        display: block;
+        border-radius: 16px;
+        border: 10px solid #fff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+@media only screen and (max-width: 1199px) {
+    .recover-space {
+        gap: 0;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .recoverSection {
+        .recoverMainCtn {
+            &:first-child {
+                margin-bottom: 60px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .recoverSection {
+        padding: 50px 0;
+
+        .recoverMainCtn {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            h3 {
+                width: 100%;
+                max-width: 370px;
+                margin: 0 auto 8px;
+            }
+
+            &:last-child {
+                flex-direction: column;
+            }
+
+            &:first-child {
+                margin-bottom: 40px;
+            }
+
+            .recoverCtn {
+                text-align: center;
+                padding-right: 0;
+
+                span {
+                    margin-bottom: 12px;
+                    font-size: 12px;
+                    padding: 6px 12.1px;
+                    line-height: 1.01;
+                }
+
+                p {
+                    font-size: 16px;
+                    width: 100%;
+                    max-width: 370px;
+                    margin: 0 auto 30px;
+                    line-height: 1.38;
+                }
+
+                .recoverBtn a {
+                    padding: 14px 65.24px;
+                }
+
+            }
+
+            .recoverImg {
+                padding-right: 0;
+                padding-bottom: 30.24px;
+
+                img {
+                    border: 5px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .recoverImg img {
+        width: 100%;
+        max-width: 400px;
+        object-fit: cover;
+        min-height: 277px;
+    }
+}
+
+/*=============================================
+  = recover-section Css End
+  =============================================*/
+
+/*=============================================
+  = preview-FAQ-section CSS
+  =============================================*/
+.previewFaqSection {
+    padding-bottom: 100px;
+
+    .container {
+        max-width: 1280px;
+    }
+
+    .previewFaqTitle {
+        margin-bottom: 60px;
+
+        h2 {
+            color: #181D20;
+            font-family: 'Satoshi';
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+}
+
+.previewFaq.faqItem {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.previewFaq.faqQuestion {
+    color: #181D20;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Satoshi';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    border: 0.5px solid #8256FF;
+    transition: background-color 0.3s ease;
+    background: rgba(213, 198, 255, 0.10);
+}
+
+.previewFaq.faqAnswer {
+    display: none;
+    padding: 24px 30px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+input[type="radio"]:checked~.previewFaq.faqAnswer {
+    display: block;
+}
+
+.previewFaq.faqItem input {
+    display: none;
+}
+
+.previewFaq.faqItem .minusCheck {
+    display: none;
+}
+
+.previewFaq.faqItem input:checked+label .plusCheck {
+    display: none;
+}
+
+.previewFaq.faqItem input:checked+label .minusCheck {
+    display: block;
+}
+
+.previewFaq.faqQuestion img.plusCheck {
+    width: 100%;
+    max-width: 24px;
+}
+
+.previewFaq.faqQuestion br,
+.previewFaqTitle h2.mobileShow {
+    display: none;
+}
+
+.previewFaq.faqItem input:checked+label .previewFaq.faqAnswer {
+    animation: showFAQ 1.5s linear;
+}
+
+@keyframes showFAQ {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .previewFaqTitle {
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 32px;
+        }
+
+    }
+
+    .previewFaq.faqContainer .previewFaq.faqItem:last-child {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .previewFaq.faqAnswer {
+        color: #2A2A33;
+        font-size: 12px;
+        padding: 14px 0 0;
+        font-weight: 500;
+        line-height: 1.5;
+        font-family: 'Satoshi';
+    }
+
+    .previewFaq.faqContainer .previewFaq.faqItem:last-child {
+        margin: 0;
+        padding: 11px 12px;
+    }
+
+    .previewFaqSection {
+        padding-bottom: 50px;
+    }
+
+    .previewFaq.faqItem {
+        padding: 11px 12px;
+        margin-bottom: 16px;
+        border-radius: 6px;
+        border: 0.5px solid #8256FF;
+        background: rgba(213, 198, 255, 0.10);
+    }
+
+    .previewFaqTitle {
+        h2.mobileNone {
+            display: none;
+        }
+
+        h2.mobileShow {
+            display: block;
+        }
+    }
+
+    .previewFaq.faqQuestion {
+        padding: 0;
+        font-size: 14px;
+        text-align: left;
+        border: 0;
+        line-height: 1.43;
+        align-items: start;
+        background-color: transparent;
+
+        img.plusCheck {
+            width: 100%;
+            max-width: 20px;
+            margin-left: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .previewFaq.faqQuestion br {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .previewFaq.faqAnswer {
+        margin: 0;
+        width: 100%;
+        max-width: 326px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .previewFaq.faqQuestion {
+        font-size: 12px;
+
+        br {
+            display: none;
+        }
+    }
+}
+
+/*=============================================
+  = New Preview Section CSS
+  =============================================*/
+
+.image-preview-section .MuiBgRemove--wrap {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.image-preview-section .MuiBgRemove--wrap .MuiStack-root-wrap {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #D8D8D8;
+    border-radius: 32px;
+}
+
+.image-preview-section .MuiBgRemove--wrap .MuiStack-root-wrap .MuiPaper-outlined {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.image-preview-section .MuiBgRemove--wrap .MuiStack-root-wrap .MuiPaper-outlined .MuiTabs-scroller {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 20px;
+    padding-bottom: 0px;
+}
+
+.image-preview-section .MuiBgRemove--wrap .MuiStack-root-wrap .MuiPaper-outlined .MuiTabs-scroller .MuiTabs-rgrd {
+    width: 100%;
+    display: flex;
+}
+
+.MuiTabs-rgrd button.MuiTab-index-btn {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 0px 8px;
+}
+
+.MuiTabs-rgrd button.MuiTab-index-btn {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700;
+    border: unset;
+    outline: unset;
+    color: #000000;
+    background-color: transparent;
+    padding-bottom: 10px;
+}
+
+span.MuiTabs-indicator {
+    width: 100%;
+    height: 2px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #EBEBEB;
+    border-radius: 7px;
+}
+
+button.MuiTab-index-btn.active::before {
+    content: '';
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    right: auto;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    background-color: #8256FF;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.image-preview-section .MuiBgRemove--wrap .MuiStack-root-wrap .MuiPaper-outlined .MuiTouchR.ipple--bgr {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 20px;
+    background: rgba(246, 243, 255, 0.50);
+}
+
+.image-preview-section .MuiBgRemove--wrap .MuiStack-root-wrap .MuiPaper-outlined .MuiTouchR.ipple--bgr .MuiButtonGroup-root {
+    width: 100%;
+    display: inline-flex;
+    column-gap: 5px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    background: rgba(213, 198, 255, 0.40);
+}
+
+.MuiTouchR.ipple--bgr .MuiButtonGroup-root button.MuiTab-Primary-btn {
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+}
+
+.MuiTouchR.ipple--bgr .MuiButtonGroup-root button.MuiTab-Primary-btn {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 15px 15px;
+    color: #414141;
+    border: unset;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.MuiTouchR.ipple--bgr .MuiButtonGroup-root button.MuiTab-Primary-btn.active {
+    color: #8256FF;
+    border-radius: 6px;
+    border: 1px solid rgba(130, 86, 255, 0.50);
+    background-color: #FFFFFF;
+    max-width: 138px;
+}
+
+/******************************************************/
+
+.MuiBgOption-root {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 10px;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.MuiBgOption-root button.MuiButtonBase {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    color: inherit;
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+    border: unset;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: 0.25s ease-in-out;
+    flex-shrink: 0;
+}
+
+.MuiBgOption-root button.MuiButtonBaseBorder {
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    border: 1px solid rgb(232, 232, 232);
+}
+
+.MuiBgOption-root button.MuiButtonBase:focus,
+.MuiBgOption-root button.MuiButtonBase:hover {
+    border-color: rgb(77, 87, 97);
+}
+
+.MuiBgOption-root button.MuiButtonBase .MuiBox--img-outer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+span.bg__transparent {
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background-size: 10px 10px;
+    background-position: 0px 0px, 0px 5px, 5px -5px, -5px 0px;
+    background-image: linear-gradient(45deg, rgb(232, 232, 232) 25%, transparent 25%), linear-gradient(-45deg, rgb(232, 232, 232) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgb(232, 232, 232) 75%), linear-gradient(-45deg, transparent 75%, rgb(232, 232, 232) 75%);
+    margin: 0px;
+}
+
+.MuiBgOption__wpl {
+    width: 100%;
+    height: 336px;
+    overflow-y: scroll;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 12px;
+    padding-bottom: 8px;
+}
+
+.MuiBgOption__wpl::-webkit-scrollbar-track {
+
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.MuiBgOption__wpl::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.MuiBgOption__wpl::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #D5C6FF;
+}
+
+.MuiCardActions-btn button.MuiButton-info {
+    font-size: 16px;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #8256FF;
+    border: 1px solid #8256FF;
+    transition: all 0.3s ease-in-out;
+}
+
+.MuiCardActions-btn button.MuiButton-info:hover {
+    color: #414141;
+    border: 1px solid #D9D9D9;
+    background-color: transparent;
+}
+
+.MuiCardActions-btn button.MuiButton-btn-border {
+    color: #414141;
+    border: 1px solid #D9D9D9;
+    background-color: transparent;
+    margin-right: 4px;
+}
+
+.MuiCardActions-btn button.MuiButton-btn-border:hover {
+    color: #FFFFFF;
+    border: 1px solid #8256FF;
+    background-color: #8256FF;
+}
+
+.MuiCardActions-btn {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    margin-top: 33px;
+}
+
+/***********************Functionality Design**********************/
+
+.MuiFunctional-root {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.MuiFunctional-root .wpb_MuiFunctional-element {
+    border: 1px solid #DEDEDE;
+    border-radius: 12px;
+    padding: 12px 18px;
+    line-height: 0px;
+}
+
+.MuiFunctional-root .wpb_MuiFunctional-element button.MuiFunctional-btn {
+    color: rgba(17, 25, 39, 0.38);
+    background-color: transparent;
+    border: unset;
+    outline: unset;
+    line-height: 0px;
+    cursor: pointer;
+}
+
+.MuiFunctional-root .wpb_MuiFunctional-cmnt {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.MuiFunctional-root .wpb_MuiFunctional-element .MuiFunctional-mrg {
+    margin-right: 16px;
+}
+
+.MuiFunctional-root .wpb_MuiFunctional-cmnt .MuiFunctional-mrg {
+    margin-right: 6px;
+}
+
+/***************Scrollbar and Responsive CSS***************/
+
+.MuiBgOption-root button.MuiButtonBase {
+    width: 100%;
+    max-width: calc(20% - 8px);
+}
+
+@media only screen and (max-width: 1024px) {
+    .MuiBgOption-root button.MuiButtonBase .MuiBox--img-outer img.MuiBox--img {
+        width: 100%;
+    }
+
+    .MuiBgOption-root button.MuiButtonBase {
+        width: 100%;
+        max-width: calc(25% - 7.5px);
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .MuiBgOption-root button.MuiButtonBase {
+        max-width: calc(33% - 6px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .MuiBgOption-root button.MuiButtonBase {
+        max-width: 1005%;
+    }
+
+    .preview-pic {
+        max-width: 100%;
+    }
+
+    .image-preview-section .MuiBgRemove--wrap {
+        flex-wrap: wrap;
+    }
+
+    .MuiBgOption__wpl {
+        overflow-y: scroll;
+        overflow-x: scroll;
+        min-height: 0px;
+        max-height: 130px;
+    }
+
+    .MuiBgOption-root button.MuiButtonBase {
+        width: 50px;
+        height: 50px;
+    }
+
+    .MuiBgOption-root {
+        -webkit-box-align: center;
+        align-items: center;
+        gap: 6px;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(32, 56px);
+        padding-right: 12px;
+    }
+
+    .MuiBgOption__wpl::-webkit-scrollbar {
+        height: 5px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .MuiBulkTool {
+        width: 100%;
+        max-width: 980px;
+        margin: 0px auto 20px;
+        text-align: center;
+    }
+
+    .MuiFunctional-root {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .MuiFunctional-root .wpb_MuiFunctional-element {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .MuiFunctional-root .wpb_MuiFunctional-cmnt {
+        width: 100%;
+        justify-content: space-between;
+        margin: 15px 0px;
+    }
+}

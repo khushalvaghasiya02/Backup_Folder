@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    // const httpRequest = new XMLHttpRequest();
+
+
+    // httpRequest.open("GET", "info.html", true);
+    // httpRequest.send();
+
+    const xhr = new XMLHttpRequest();
+    xhr.onload = () => {
+        console.log(xhr.responseXML.title);
+    };
+    xhr.open("GET", "file.html");
+    xhr.responseType = "document";
+    xhr.send();
+
+
+</script>
+
+</html>

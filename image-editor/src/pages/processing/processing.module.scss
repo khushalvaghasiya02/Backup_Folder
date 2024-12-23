@@ -1,0 +1,206 @@
+/*=============================================
+= image-processing-section
+=============================================*/
+.image_processing_section {
+    padding: 80px 0;
+    background-image: url("../Image/image-sec-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .processing_main_ctn {
+        width: 100%;
+        max-width: 994px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 32px;
+        background: #FFF;
+        box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.10);
+
+        .upload_plus_main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .process_close_icon {
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                max-width: 40px !important;
+                position: absolute;
+                top: 6px;
+                right: 6px;
+            }
+        }
+
+        .image_processing {
+            position: relative;
+            padding: 20px 20px 117px;
+            border: 1px solid #EBEBEB;
+            border-radius: 16px;
+
+            div {
+                text-align: center;
+
+                img {
+                    width: 100%;
+                    max-width: 180px;
+                    margin: 0 auto;
+                    display: block;
+                }
+
+            }
+
+            h4 {
+                color: rgba(0, 0, 0, 0.90);
+                font-family: Satoshi;
+                font-size: 24px;
+                font-weight: 700;
+                margin: 30px 0;
+                text-align: center;
+
+            }
+
+            .clear_line {
+                position: relative;
+                width: 100%;
+                height: 16px;
+                max-width: 816px;
+                border-radius: 30px;
+                margin: 0 auto;
+                background-color: #F3F3F3;
+
+                span {
+                    width: 100%;
+                    max-width: 36%;
+                    height: 16px;
+                    border-radius: 30px;
+                    margin: 0 auto;
+                    display: block;
+                    position: absolute;
+                    left: 0px;
+                    background: linear-gradient(90deg, rgba(255, 137, 181, 0.80) 0%, rgba(148, 111, 255, 0.80) 26%, rgba(255, 164, 134, 0.80) 70.5%, rgba(105, 56, 255, 0.80) 100%);
+                }
+            }
+        }
+    }
+}
+
+.upload_area {
+    display: flex;
+    align-items: center;
+
+    div {
+        padding: 0;
+
+        a {
+            background: #D5C6FF;
+            padding: 28px;
+            border-radius: 16px;
+            border: 1px solid #8256FF;
+        }
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    img {
+        display: block;
+    }
+
+    >* {
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .image_processing_section {
+        padding: 40px 0;
+        border-radius: 30px 30px 0 0;
+
+        .container {
+            padding: 0 30px;
+        }
+
+        .processing_main_ctn {
+            padding: 12px 12px 20px;
+            border-radius: 12px;
+
+            .upload_plus_main,
+            .process_close_icon {
+                display: none;
+            }
+
+            .image_processing {
+                padding-top: 52px;
+                border-radius: 8px;
+                padding-bottom: 80px;
+
+                .clear_line {
+                    height: 8px;
+                    max-width: 298px;
+
+                    span {
+                        height: 8px;
+                    }
+                }
+
+                h4 {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .upload_area div:first-child {
+        margin-right: 8px;
+    }
+
+
+
+    .upload_area {
+        div {
+            a {
+                padding: 20.5px;
+                border-radius: 8px;
+            }
+        }
+
+        img {
+            width: 100%;
+            max-width: 60px;
+        }
+
+        >* img {
+            width: 17px !important;
+            height: 17px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .image_processing_section {
+        border-radius: 16px 16px 0 0;
+
+        .container {
+            padding: 0 15px;
+
+            .image_processing {
+                padding-top: 0;
+                padding-bottom: 40px;
+            }
+
+        }
+    }
+}

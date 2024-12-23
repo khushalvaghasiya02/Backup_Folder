@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+#myDIV {
+  background-color: coral;
+  padding: 16px;
+}
+</style>
+
+<body>
+
+<div id="myDIV">This orange element has an onmousemove event handler that displays a random number when you move the mouse inside.
+  <button onclick="removeHandler()">Remove</button>
+</div>
+
+<p id="demo"></p>
+
+<script>
+const myDiv = document.getElementById("myDIV");
+myDiv.addEventListener("mousemove", myFunction);
+
+function removeHandler() {
+  myDiv.removeEventListener("mousemove", myFunction);
+}
+
+function myFunction() {
+    console.log('okokokok');
+    // console.log(window.location.href);
+    console.log(window.screen);
+  document.getElementById("demo").innerHTML = Math.random();
+}
+
+let username = 'Max Brown';
+
+// Set a Cookie
+function setCookie(cName, cValue, expDays) {
+        let date = new Date();
+        date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+        console.log(document.cookie,'document.cookies');
+}
+
+// Apply setCookie
+setCookie('username', username, 30);
+
+let cookies = document.cookie;
+console.log(cookies); 
+
+</script>
+
+</body>
+</html>
+
+

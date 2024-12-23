@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+    <title>Email Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @font-face {
+            font-family: 'Neulis Alt';
+            src: url('/public/font/NeulisAlt-Regular.woff2') format('woff2'),
+                url('/public/font/NeulisAlt-Regular.woff') format('woff'),
+                url('/public/font/NeulisAlt-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #ffffff;
+            font-family: 'Neulis Alt', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            word-break: break-word;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        .email-content {
+            padding: 48px;
+            background-color: #e6ffeb;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .email-content h1 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .email-content p {
+            font-size: 16px;
+            margin: 16px 0;
+        }
+
+        .otp-button {
+            display: inline-block;
+            background-color: #32b338;
+            color: #fff;
+            padding: 16px 24px;
+            border-radius: 4px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .email-content {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="email-content">
+            <p>Hey,</p>
+            <h1><%= first_name %> <%= last_name %></h1>
+            <p>A request to verify your email was received for the address: <strong><%= email %></strong>.</p>
+            <p>Use the following OTP to verify your email and complete the login process:</p>
+            <a href="#" class="otp-button"><%= otp %></a>
+            <p>If you didn’t request this, you can safely ignore this email.</p>
+        </div>
+    </div>
+</body>
+
+</html>

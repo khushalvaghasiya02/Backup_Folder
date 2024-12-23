@@ -1,0 +1,219 @@
+.slider-main {
+  background-color: var(--secondary);
+  padding: 20px;
+  margin: 50px 0;
+
+  .main-container {
+    max-width: calc(50% + 638px);
+    margin-right: 0;
+  }
+
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-content {
+    width: 100%;
+    max-width: 30%;
+
+    h2 {
+      font-family: var(--font-family);
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: left;
+      color: var(--font-color);
+    }
+
+    p {
+      font-family: var(--font-family);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      margin: 10px 0;
+    }
+  }
+
+  .section-slider {
+    width: 100%;
+    max-width: 70%;
+    position: relative;
+
+    .section-slid {
+      display: flex;
+      gap: 20px;
+    }
+
+    .sild-img1 {
+      max-width: 404px;
+      width: 100%;
+      height: 582px;
+    }
+
+    .sild-img2 {
+      max-width: 372px;
+      width: 100%;
+      height: 486px;
+    }
+
+    .slide-content {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      position: absolute;
+      top: 70%;
+      left: 5%;
+      text-align: center;
+
+      .slide-text {
+        padding: 30px;
+        background: #ffffffb8;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .slide-title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+        }
+
+        span {
+          font-family: var(--font-family);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          text-align: left;
+          color: var(--dark_gray);
+
+          &:nth-child(2) {
+            width: 27px;
+            height: 1px;
+            background-color: var(--dark_gray);
+            display: block;
+            margin: 10px 0;
+          }
+        }
+
+        h4 {
+          font-family: var(--font-family);
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 33.6px;
+          text-align: left;
+        }
+      }
+
+      .slide-arrow {
+        height: 48px;
+        width: 48px;
+        background-color: var(--primary_color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  .dot-main {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    left: 37%;
+    bottom: 60px;
+
+    .dots {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .dot {
+        width: 11px;
+        height: 11px;
+        margin: 0 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+// Media Queries
+@media only screen and (max-width: 1200px) {
+  .slider-main {
+    .slider-container {
+      flex-direction: column;
+    }
+
+    .section-content {
+      width: 100%;
+      max-width: 90%;
+    }
+
+    .section-slider {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section-slider {
+    .slide-content .slide-text {
+      padding: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section-slider {
+    .sild-img3 {
+      display: none;
+    }
+    .dot-main {
+      left: 53%;
+      bottom: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .slider-main {
+    .section-slider {
+      .section-slid {
+        gap: 0px;
+      }
+
+      .sild-img1 {
+        max-width: 404px;
+        width: 100%;
+        height: 582px;
+
+        @media only screen and (max-width: 576px) {
+          max-width: 100% !important;
+        }
+      }
+
+      .sild-img2 {
+        display: none;
+      }
+    }
+
+    .dot-main {
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      left: 0%;
+      bottom: 0%;
+    }
+  }
+}

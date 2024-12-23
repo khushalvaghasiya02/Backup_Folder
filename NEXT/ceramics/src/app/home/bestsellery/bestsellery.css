@@ -1,0 +1,14 @@
+.best {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+
+.best .title {
+    margin: 20px 0x;
+    font-size: 50px;
+    line-height: 60px;
+}
+

@@ -1,0 +1,163 @@
+#contact {
+  margin: 50px 0;
+
+  .contact-main {
+    .contact-title {
+      font-family: var(--font-family);
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--font-color);
+    }
+  }
+
+  .contact-main {
+    .contact-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: 0px 141px 200px -80px #e89f711a;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 80%,
+        rgba(232, 159, 113, 1) 80%
+      );
+      border-radius: 50px;
+      .contact-form {
+        width: 100%;
+        max-width: calc(50% - 10px);
+        padding: 30px;
+
+        .contact-form-title {
+          font-family: var(--font-family);
+          font-size: 46px;
+          font-weight: 600;
+          line-height: 61px;
+          letter-spacing: 0.01em;
+          text-align: left;
+
+          span {
+            font-family: var(--font-family);
+            font-size: 46px;
+            font-weight: 600;
+            line-height: 61px;
+            letter-spacing: 0.01em;
+            text-align: left;
+            color: var(--primary_color);
+          }
+        }
+
+        .contact-form-content {
+          .ant-form-item {
+            .ant-form-item-required {
+              font-family: var(--font-family);
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 18px;
+              text-align: left;
+            }
+            .ant-input {
+              padding: 10px 15px;
+              background-color: var(--secondary);
+              border: 0px;
+              border-radius: 0px;
+            }
+            .ant-select-selector {
+              padding: 20px 15px;
+              background-color: var(--secondary);
+              border: 0;
+              border-radius: 0;
+            }
+            .ant-form-item-control-input-content {
+              display: flex;
+              gap: 20px;
+              justify-content: center;
+              align-items: center;
+
+              .ant-btn {
+                margin: 0;
+                padding: 20px 20%;
+                background-color: var(--primary_color);
+                font-family: var(--white);
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 22.4px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: var(--white);
+                transition: all 0.5s ease-in-out;
+                border: none;
+
+                &:hover {
+                  background-color: var(--white);
+                  border: 1px solid var(--primary_color);
+                  color: var(--primary_color);
+                }
+              }
+              @media screen and (max-width: 375px) {
+                flex-direction: column;
+              }
+            }
+          }
+        }
+        .contact-form-footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          .form-footer-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            .box-content {
+              p {
+                font-family: var(--font-family);
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                text-align: left;
+                color: var(--font-color);
+              }
+              a {
+                font-family: var(--font-family);
+                color: var(--primary_color);
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                text-align: left;
+              }
+            }
+          }
+          @media screen and (max-width: 992px) {
+            flex-direction: column;
+            align-items: start;
+          }
+        }
+      }
+
+      .contact-map {
+        width: 100%;
+        max-width: calc(50% - 10px);
+        padding: 40px 50px 40px 0px;
+      }
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        background: none;
+        .contact-form {
+          max-width: 100%;
+          padding: 0px;
+        }
+        .contact-map {
+          max-width: 100%;
+          padding: 0px;
+        }
+      }
+    }
+  }
+}

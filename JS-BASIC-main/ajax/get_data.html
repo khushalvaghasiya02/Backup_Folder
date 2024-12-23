@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function run() {
+
+        // Creating Our XMLHttpRequest object
+        let xhr = new XMLHttpRequest();
+
+        // Making our connection 
+        let url = 'https://jsonplaceholder.typicode.com/todos';
+        xhr.open("GET", url, true);
+
+        // function execute after request is successful
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                // console.log(this.responseText);
+            }
+        }
+        // Sending our request
+        xhr.send();
+    }
+    // Calling
+    run();
+
+    async function logMovies() {
+        await fetch("https://jsonplaceholder.typicode.com/todos")
+            .then(data => data.json())
+            .then(json => console.log(json))
+    }
+
+    async function getMovieData() {
+        await fetch("https://jsonplaceholder.typicode.com/todos").then(movies => movies.json()).then(json => console.log(json))
+    }
+
+    getMovieData()
+
+</script>
+
+</html>

@@ -1,0 +1,48 @@
+.banner {
+    background-image: url('../asset/main.webp');
+    width: 100%;
+    height: calc(100vh - 98px);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+
+}
+
+.description {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0px 20%;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 4rem;
+    font-size: 1rem;
+    background-color: var(--brand);
+    border: none;
+    color: var(--neutral2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+}

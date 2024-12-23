@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <h1 id="demo"></h1>
+
+    <p id="test_demo"></p>
+
+    <script>
+        // Create an object:
+        const person = {
+            firstName: "John",   
+            lastName: "Doe",                                                         
+            id: 5566,    
+            age: 24,     
+            school: '',     
+            fullName: function () {    
+                if (this.school) {
+                    return this.firstName + " " + this.lastName + " " + this.age + " " + this.school ? 'asdasd' : 'asdasd';
+                } else {   
+                    return this.firstName + " " + this.lastName + " " + this.age + " ";
+                }   
+            }
+        };
+
+
+        // Display data from the object:
+        document.getElementById("demo").innerHTML = person.fullName();
+
+
+        function testReturn() {
+            let data = '1asd23'
+            let data2 = data
+            let data3 = data2
+            let data4 = data3
+            let data5 = data4
+            data5 = 'HERE CHANGE'
+            document.getElementById('demo').innerHTML = data5
+            document.getElementById('test_demo').innerHTML = data5
+
+            return data5
+        }
+
+        let outPut = testReturn()
+        console.log(outPut, '33');
+    </script>
+
+</body>
+
+</html>

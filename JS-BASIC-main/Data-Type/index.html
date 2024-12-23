@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+function getData(){
+        console.log('click');
+        test()
+        console.log('call done');
+    }
+</script>
+
+<body>
+<button id="clickCall" onclick="getData()"></button>
+</body>
+<script>
+    let dataType = 8
+    let data1 = '8'
+    let data2 = true
+    let data3 = {
+        name: "test",
+        age: 30
+    }
+    data3.age = 35
+    // let data4 = [{
+    //     name: "test",
+    //     age: 19
+    // }, {
+    //     name: "test",
+    //     age: 20
+    // }, {
+    //     name: "test",
+    //     age: 21
+    // }]
+
+    // Array Index Using Obj
+    // let res = data4[1]
+    // console.log(res,'res');
+
+    // Obj Value
+
+    // let sRes = data3.age
+    // console.log(sRes);
+    
+    let data = document.getElementById("clickCall").innerHTML = 'Test'
+
+    function test(){
+        let data = 4 + 5
+        console.log(data,'get result');
+        return data
+    }
+
+
+
+</script>
+
+</html>

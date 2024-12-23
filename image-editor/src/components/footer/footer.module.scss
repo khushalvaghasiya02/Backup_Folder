@@ -1,0 +1,201 @@
+/*============================================= 
+= Home Page Footer Css End 
+============================================= */
+
+.site_footer__wrapper {
+    width: calc(100% - 100px);
+    padding: 40px 0;
+    margin: 0 auto 50px;
+    border-radius: 32px;
+    background-color: #27364b;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    .footer__container {
+        max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+
+        // .footer_top__wrapper {
+        //     width: 100%;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     margin-bottom: 20px;
+
+        //     .footer_social__wrapper {
+        //         .social__icons_wrapper {
+        //             width: 100%;
+        //             display: inline-block;
+        //             vertical-align: top;
+
+        //             ul {
+        //                 width: 100%;
+        //                 display: flex;
+        //                 justify-content: flex-end;
+        //                 align-items: center;
+
+        //                 li {
+        //                     width: 100%;
+        //                     height: 100%;
+        //                     display: inline-block;
+        //                     vertical-align: top;
+        //                     a {
+        //                         width: 32px;
+        //                         height: 32px;
+        //                         display: flex;
+        //                         align-items: center;
+        //                         justify-content: center;
+        //                         background-color: #374a65;
+        //                         border-radius: 6px;
+        //                         margin: 0 4px;
+        //                         line-height: 0;
+
+        //                         img {
+        //                             transition: all 0.4s ease-in-out;
+
+        //                             &:hover {
+        //                                 transform: scale(1.17);
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+        .footer_bottom__wrapper {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-left: unset;
+            border-right: unset;
+            .footer_menu_wrapper1 .footer_border__margin {
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                vertical-align: top;
+                padding: 30px 0px;
+              }              
+
+            .footer_description_content {
+                width: 40%;
+                flex: 0 0 40%;
+                padding: 0px 15px;
+                border-right: 1px solid rgba(255, 255, 255, 0.40);
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #ffffff;
+                    max-width: 440px;
+                }
+            }
+
+            .footer_menu_wrapper1 {
+                width: 20%;
+                padding: 0 15px;
+
+                h3.footer_title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    color: #d5c6ff;
+                    margin-bottom: 12px;
+                }
+
+                .site_footer_menu {
+                    ul {
+                        li {
+                            margin-bottom: 10px;
+
+                            a {
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: #ffffff;
+                                transition: all 0.4s ease-in-out;
+
+                                &:hover {
+                                    color: #d5c6ff;
+                                }
+                            }
+                        }
+
+                        li:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer_copyright__wrapper {
+            margin-top: 20px;
+            text-align: center;
+
+            p,
+            a {
+                font-size: 16px;
+                line-height: 1.4;
+                color: #ffffff;
+                font-weight: 400;
+
+                a {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        max-width: 252px;
+        height: 357px;
+        z-index: -1;
+
+        &.before {
+            background-image: url('../image/footer_pattern_img.svg');
+            left: 0;
+        }
+
+        &.after {
+            background-image: url('../image/footer_pattern_img1.svg');
+            right: 0;
+        }
+    }
+
+    @media only screen and (max-width: 1500px) {
+
+        &:before,
+        &:after {
+            opacity: 0.4;
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+
+        &:before,
+        &:after {
+            max-width: 152px;
+            height: 257px;
+            background-size: contain;
+        }
+    }
+}
+
+/*============================================= 
+  = Home Page Footer Css End 
+  ============================================= */

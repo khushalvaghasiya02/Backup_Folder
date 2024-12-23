@@ -1,0 +1,50 @@
+.employee {
+    width: 100%;
+    background-color: #d6d6d6d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+.employee-content .title{
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center  ;
+}
+.employee-content .employee-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0px;
+}
+
+.employee-content .employee-list .employee-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 33.33%;
+}
+.employee-content .employee-list .employee-item .employee-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.employee-content .employee-list .employee-item .employee-name{
+    text-align: center;
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 400;
+}
+.employee-content .employee-list .employee-item .employee-info{
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    unicode-bidi: isolate;
+    word-wrap: break-word;
+    color: #333333;
+}

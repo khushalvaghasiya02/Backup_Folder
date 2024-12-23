@@ -1,0 +1,34 @@
+:root {
+  --brand: rgb(148, 74, 74);
+  --secondary: rgb(168, 94, 94);
+  --complementary: rgb(26, 30, 41);
+  --neutral1: rgb(51, 51, 51);
+  --neutral2: rgb(255, 255, 255);
+  --textStyleColor_p_default_block: var(--neutral1);
+  --textStyleColor_h1_default_block: var(--neutral2);
+  --textStyleColor_h2_default_block: null;
+  --textStyleColor_h3_default_block: null;
+  --textStyleColor_h4_default_block: null;
+  --textStyleColor_custom_link: var(--secondary);
+  --textStyleColor_custom_link_hover: var(--secondary);
+  --textStyleColor_slider_header: var(--neutral2);
+  --textStyleColor_gallery_header: var(--neutral2);
+  --textStyleColor_p_default_block_white: var(--neutral2);
+  --textStyleColor_newsfeed_header: null;
+  --textStyleColor_newsfeed_date: #bababa;
+  --textStyleColor_button_default: var(--neutral2);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+}
+/* .main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */

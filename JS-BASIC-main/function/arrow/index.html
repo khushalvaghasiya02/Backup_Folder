@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // a=4 and b=5 is param [ Arrow Function init ]
+        let arrowFun = (a, b) => {
+            let data = {
+                total: a * b,
+                tota: a * b,
+                totl: a * b,
+                toal: a * b,
+                ttal: a * b,
+                ta: a * b,
+                to: a * b
+            }
+
+            return data  
+            
+        }
+
+        // Invoke Function and pass param 4=a, 5=b
+        let total = arrowFun(4, 5)
+        console.log(total, 'Arrow Function');
+
+        // Normal Function
+        function test(a, b, c, d, e, f) {
+            return a * b * c * d
+        }
+
+        // Invoke Function
+        let result = test(4, 5, 6, 9)
+        console.log(result, 'Return Type Function');
+
+        function fullName(first_name, last_name) {
+            let userName = `Hey ! ${first_name} ${last_name} welcome backe`
+            return userName
+        }
+
+        let getUserName = fullName("Abhi", "Sojitra")
+        console.log(getUserName,);
+
+
+
+
+    </script>
+</body>
+
+</html>

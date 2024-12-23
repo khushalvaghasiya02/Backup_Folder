@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Try and Catch</title>
+  </head>
+  <body>
+    <p id="name"></p>
+  </body>
+  <script>
+    try {
+      let name = false;
+
+      let data = name ? "1" : "2";
+
+      if (!name) {
+        console.log("okkkkk");
+        throw "data not found";
+      }
+    } catch (error) {
+      document.getElementById("name").innerHTML = error;
+    }
+  </script>
+</html>

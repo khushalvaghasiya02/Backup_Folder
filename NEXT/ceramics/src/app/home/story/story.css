@@ -1,0 +1,58 @@
+.story {
+    margin: 50px 0px 0px 0px;
+    background-image: url('https://tz47gb.yourbrand.studio/files/dynamicContent/sites/tz47gb/images/en/webpage_11/ls0ljcz6/element_241/rwdMode_1/2400x800/history.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+}
+
+.story::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.story .story-main {
+    width: 100%;
+    height: 100%;
+}
+
+.story .story-main .story-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.story .story-main .story-left .story-content {
+    padding: 30% 10% 0px 0px;
+}
+
+.story .story-main .story-left .story-content h2 {
+    font-size: 50px;
+    line-height: 60px;
+    color: var(--neutral2);
+    text-align: left;
+}
+.story .story-main .story-left .story-content p {
+    font-size: 17px;
+    line-height: 27px;
+    color: var(--neutral2);
+    text-align: left;
+}
+.story .story-main .story-right {
+    width: 50%;
+    height: 100%;
+}

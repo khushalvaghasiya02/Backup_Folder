@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="result"></p>
+</body>
+<script>
+
+    function test() {
+        let user = {
+            name: "Abhi Sojitra",
+            age: "23",
+            phone: "+91 9106682536",
+            is_married: false,
+            aadhard_card: 254692926309,
+        }
+
+
+        let schoolInfo = {
+            school_name: "test"
+        }
+
+        return { user, ...schoolInfo }
+    }
+
+    // Invoke Function
+    let result = test()
+    console.log(result);
+
+
+    let product = 'test'
+
+
+    function calculateData(a, b) {
+        if (a !== 4) {
+            let result = a + b
+            return result
+        }
+    }
+
+    let dataget = calculateData(4, 5)
+    document.getElementById('result').innerHTML = dataget
+
+
+
+</script>
+
+</html>

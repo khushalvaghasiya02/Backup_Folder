@@ -1,0 +1,36 @@
+.page-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-banner::after {
+    content: "";
+    position: absolute;
+    background-color: #00000070;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.page-banner .banner__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    padding: 5%;
+}
+
+.page-banner .banner__title {
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+    margin: 0;
+}

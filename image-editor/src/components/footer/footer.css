@@ -1,0 +1,372 @@
+/*=============================================
+= Home Page Footer Css End
+=============================================*/
+
+footer.site_footer__wrapper {
+  width: calc(100% - 100px);
+  padding: 40px 0px;
+  margin: 0px auto 50px;
+  border-radius: 32px;
+  background-color: #27364b;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+footer.site_footer__wrapper .footer__container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+footer.site_footer__wrapper .footer__container .footer_top__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer.site_footer__wrapper .footer__container .footer_top__wrapper .footer_social__wrapper .social__icons_wrapper {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer.site_footer__wrapper .footer__container .footer_top__wrapper .footer_social__wrapper .social__icons_wrapper ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer.site_footer__wrapper
+  .footer__container
+  .footer_top__wrapper
+  .footer_social__wrapper
+  .social__icons_wrapper
+  ul
+  li {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer.site_footer__wrapper
+  .footer__container
+  .footer_top__wrapper
+  .footer_social__wrapper
+  .social__icons_wrapper
+  ul
+  li
+  a {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #374a65;
+  border-radius: 6px;
+  line-height: 0;
+  margin: 0px 4px;
+}
+
+footer.site_footer__wrapper
+  .footer__container
+  .footer_top__wrapper
+  .footer_social__wrapper
+  .social__icons_wrapper
+  ul
+  li
+  a
+  img {
+  transition: all 0.4s ease-in-out;
+}
+
+footer.site_footer__wrapper
+  .footer__container
+  .footer_top__wrapper
+  .footer_social__wrapper
+  .social__icons_wrapper
+  ul
+  li:hover
+  a
+  img {
+  transform: scale(1.17);
+}
+
+footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_menu_wrapper1 .footer_border__margin {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px 0px;
+}
+
+footer.site_footer__wrapper .footer__container .footer_bottom__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: unset;
+  border-right: unset;
+}
+
+footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_description_content {
+  width: 40%;
+  flex: 0 0 40%;
+  padding: 0px 15px;
+}
+
+footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_menu_wrapper1 {
+  width: 20%;
+  flex: 0 0 20%;
+  padding: 0px 15px;
+}
+
+footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_description_content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  width: 100%;
+  max-width: 440px;
+  padding-right: 15px;
+}
+
+footer.site_footer__wrapper
+  .footer__container
+  .footer_bottom__wrapper
+  .footer_description_content
+  .description_border_wrap {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px 0px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_menu_wrapper1 h3.footer_title {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #d5c6ff;
+  margin-bottom: 12px;
+}
+
+footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_menu_wrapper1 .site_footer_menu ul li {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+footer.site_footer__wrapper
+  .footer__container
+  .footer_bottom__wrapper
+  .footer_menu_wrapper1
+  .site_footer_menu
+  ul
+  li:last-child {
+  margin-bottom: 0px;
+}
+
+footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_menu_wrapper1 .site_footer_menu ul a {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+}
+
+footer.site_footer__wrapper
+  .footer__container
+  .footer_bottom__wrapper
+  .footer_menu_wrapper1
+  .site_footer_menu
+  ul
+  a:hover {
+  color: #d5c6ff;
+}
+
+footer.site_footer__wrapper .footer__container .footer_copyright__wrapper {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+footer.site_footer__wrapper .footer__container .footer_copyright__wrapper p,
+footer.site_footer__wrapper .footer__container .footer_copyright__wrapper a {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+}
+footer.site_footer__wrapper .footer__container .footer_copyright__wrapper a {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+@media only screen and (max-width: 1099px) {
+  footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_description_content {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_menu_wrapper1 {
+    width: 33.33%;
+    flex: 0 0 33.33%;
+  }
+
+  footer.site_footer__wrapper
+    .footer__container
+    .footer_bottom__wrapper
+    .footer_description_content
+    .description_border_wrap {
+    border-right: unset;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_description_content p {
+    max-width: 100%;
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer.site_footer__wrapper {
+    width: 100%;
+    margin: 0px 0px;
+    border-radius: unset;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  footer.site_footer__wrapper {
+    padding: 30px 0px 20px;
+  }
+
+  footer.site_footer__wrapper .footer__container .footer_top__wrapper .footer_logo__wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer.site_footer__wrapper .footer__container .footer_top__wrapper .footer_social__wrapper {
+    width: 100%;
+  }
+
+  footer.site_footer__wrapper
+    .footer__container
+    .footer_top__wrapper
+    .footer_social__wrapper
+    .social__icons_wrapper
+    ul
+    li {
+    width: auto;
+  }
+
+  footer.site_footer__wrapper
+    .footer__container
+    .footer_top__wrapper
+    .footer_social__wrapper
+    .social__icons_wrapper
+    ul {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_menu_wrapper1 {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_menu_wrapper1 .site_footer_menu ul li {
+    margin-bottom: 7px;
+  }
+
+  footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_description_content,
+  footer.site_footer__wrapper .footer__container .footer_bottom__wrapper .footer_menu_wrapper1 {
+    padding: 0px 0px;
+  }
+
+  footer.site_footer__wrapper
+    .footer__container
+    .footer_bottom__wrapper
+    .footer_menu_wrapper1:not(:last-child)
+    .footer_border__margin {
+    padding-bottom: 0px;
+  }
+}
+
+/*===============Footer Pattern===============*/
+
+footer.site_footer__wrapper:before,
+footer.site_footer__wrapper:after {
+  content: '';
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 252px;
+  height: 357px;
+  z-index: -1;
+}
+
+footer.site_footer__wrapper:before {
+  background-image: url('../image/footer_pattern_img.svg');
+  right: auto;
+  left: 0px;
+}
+
+footer.site_footer__wrapper:after {
+  background-image: url('../image/footer_pattern_img1.svg');
+  right: 0px;
+  left: auto;
+}
+
+@media only screen and (max-width: 1500px) {
+  footer.site_footer__wrapper:before,
+  footer.site_footer__wrapper:after {
+    opacity: 0.4;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  footer.site_footer__wrapper:before,
+  footer.site_footer__wrapper:after {
+    max-width: 152px;
+    height: 257px;
+    background-size: contain;
+  }
+  footer.site_footer__wrapper:before {
+    right: 0px;
+    left: auto;
+    bottom: 30%;
+    transform: rotate(180deg);
+  }
+}
+
+/*===============Footer Pattern===============*/
+
+/*=============================================
+= Home Page Footer Css End
+=============================================*/

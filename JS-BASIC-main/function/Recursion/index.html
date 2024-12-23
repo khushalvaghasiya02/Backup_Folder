@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="data"></p>
+</body>
+
+<script>
+    // program to count down numbers to 1
+    function countDown(number) {
+        // display the number
+        console.log(number);
+        // decrease the number value
+        const newNumber = number - 1;
+        // base case
+        if (newNumber > 0) {
+            countDown(newNumber);
+        }
+    }
+
+    // call pass one param
+    countDown(11);
+
+</script>
+
+</html>

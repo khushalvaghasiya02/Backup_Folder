@@ -1,0 +1,87 @@
+@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
+
+:root {
+    --primary_color: #E89F71;
+    --black: #000000;
+    --white: #ffffff;
+    --light_gray: #F4F5F7;
+    --secondary: #FCF8F3;
+    --dark_gray: #767676;
+    --font-color: #3A3A3A;
+    --description: #898989;
+    --box-shadow: rgba(145, 158, 171, 0.18) 0px 0px 2px 0px, rgba(145, 158, 171, 0.18) 0px 16px 32px -4px;
+    --light-white: rgb(251, 251, 251);
+    --font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.btn1 {
+    width: 151px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary_color);
+    color: var(--white);
+    font-family: var(--font-family);
+    transition: all ease 0.5s;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: var(--primary_color);
+    border: 1px solid var(--primary_color);
+}
+
+@media (max-width: 768px) {
+    .btn1 {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.logo span {
+    font-weight: 700;
+    font-size: 24px;
+    Line-height: 29px;
+    color: var(--white);
+}
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}

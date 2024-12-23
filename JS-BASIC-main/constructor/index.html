@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript Object Constructors</h2>
+    <p id="demo"></p>
+    <p id="total"></p>
+</body>
+<script>
+
+    // Constructor function for Person objects
+    function Person(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+        this.name = function () {
+            return this.firstName + " " + this.lastName
+        };
+    }
+
+    // Create a Person object
+    const myFather = new Person("John", "Doe", 50, "blue");
+    const myMother = new Person("Test", "D Test", 40, "red");
+
+    // Display full name
+    document.getElementById("demo").innerHTML =
+        "Check " + myMother.name() + myFather.name();
+
+    // Function this key & Constructor
+    function Calculate(x, y, z) {
+        this.a = x || 0
+        this.b = y || 0
+        this.c = z || 0
+
+        this.additions1 = function () {
+            return (this.a + this.b + this.c)
+        }
+
+        this.substraction = function () {
+            return this.a - this.b - this.c
+        }
+
+        this.multiplication = function () {
+            return this.a * this.b
+        }
+
+        this.divison = function () {
+            return this.a / this.b
+        }
+    }
+    const getResults = new Calculate(10, 30)
+    const getResults1 = new Calculate(5000, 1000)
+    const getMultiplicationData = new Calculate(18, 9)
+    const getDivisonData = new Calculate(18, 9)
+    document.getElementById("total").innerHTML = "Total is " + getResults.additions1() + " " + getResults1.substraction() + " " + getMultiplicationData.multiplication() + " " + getDivisonData.divison()
+
+    let data = [1, 2, 3, 4, 5]
+    let otherdata = { name: 'test' }
+
+    let totalData = [data, { ...otherdata }]
+    console.log(totalData);
+
+    let school1 = [1, 2, 3, 4, 5, 9]
+    let school2 = [6, 7, 8, 9, 10, 5]
+    // let totalSchool = [...school1, ...school2]
+    let totalSchool = [...new Set([...school1, ...school2])];
+    console.log(totalSchool, 'totalSchool');
+
+</script>
+
+</html>

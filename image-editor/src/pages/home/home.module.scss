@@ -1,0 +1,1331 @@
+/*=============================================
+= Banner SCSS Start
+=============================================*/
+
+.banner_section {
+  .banner_main_bg {
+    background-image: url('../image/home-banner-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.banner_radius {
+  overflow: hidden;
+  margin: 0 50px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.banner_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 100px 0;
+
+  .banner_text {
+    max-width: 60%;
+    width: 100%;
+
+    h1 {
+      color: #fff;
+      font-family: Satoshi;
+      font-size: 70px;
+      font-weight: 400;
+      margin-right: 82px;
+      line-height: 1.4;
+
+      span {
+        background: linear-gradient(91deg, #ff71a9 16%, #ffa385 97%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .banner_image {
+    width: 100%;
+    max-width: 40%;
+
+    p {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin: 32px 0;
+    }
+  }
+
+  .header_btn_info {
+    .header_btn_right {
+      a {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}
+.header_btn_info {
+  display: flex;
+  gap: 16px;
+
+  a {
+    color: #8256ff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    border: 1px solid #8256ff;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 10px 26px;
+    white-space: nowrap;
+  }
+
+  .header_btn_right {
+    a {
+      background-color: #8256ff;
+      color: #fff;
+    }
+  }
+}
+
+.testimonial_banner_slider_box {
+  border-radius: 16px;
+  border: 1px solid #c3dbff;
+  background: linear-gradient(286deg, #667c9a 0%, #4e5d73 74.65%);
+  max-width: 625px;
+  width: 100%;
+  margin-top: 74px;
+  padding: 24px;
+  position: relative;
+
+  .testimonial_slider_image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    .testimonials_content {
+      margin-left: 16px;
+
+      h3 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 22px;
+  }
+}
+
+.testimonial_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.position_bg_star {
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+  }
+}
+
+.main_position_bg_arrow {
+  img {
+    position: absolute;
+    max-width: 180px;
+    width: 100%;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+  }
+}
+
+.logos_slider {
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #000 15%, #000 85%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #000 18%, #000 100%, rgba(0, 0, 0, 0) 100%);
+
+  .logos_slider_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slide 30s linear infinite;
+
+    img {
+      width: 100%;
+      max-width: 136px;
+      margin: 0 16px;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.banner_main_slider {
+  background-color: #3a495f;
+}
+
+.slider_main_content {
+  display: flex;
+  align-items: center;
+
+  .work_marquee_label {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    gap: 23px;
+    width: 50%;
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1440px) {
+  .banner_section {
+    .banner_radius {
+      .banner_main_bg {
+        .banner_text {
+          h1 {
+            font-size: 48px;
+            span {
+              font-size: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimonial_banner_slider_box {
+    max-width: 480px;
+    p {
+      font-size: 20px;
+    }
+  }
+  .main_position_bg_arrow img {
+    max-width: 140px;
+  }
+  .slider_main_content {
+    .work_marquee_label {
+      font-size: 24px;
+      gap: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .slider_main_content {
+    .work_marquee_label {
+      font-size: 20px;
+      gap: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .banner_text {
+    h1 {
+      font-size: 45px !important;
+      margin-right: 20px;
+    }
+  }
+  .testimonial_banner_slider_box {
+    max-width: 420px;
+    p {
+      font-size: 16px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .banner_content {
+    padding: 80px 0;
+    display: inline-block;
+  }
+  .testimonial_banner_slider_box {
+    display: none;
+  }
+  .main_position_bg_arrow {
+    display: none;
+  }
+  .banner_text h1 {
+    width: 100%;
+  }
+  .banner_text {
+    max-width: unset !important;
+  }
+  .banner_image {
+    max-width: unset !important;
+    display: flex;
+    flex-direction: column;
+    img {
+      order: 1;
+    }
+  }
+  .banner_section {
+    .header_btn_info {
+      margin-bottom: 40px;
+      .header_btn_right {
+        width: fit-content;
+      }
+    }
+  }
+  .slider_main_content {
+    display: flex;
+    padding: 15px 0;
+    .work_marquee_label {
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 281px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ffffff80;
+    }
+    img {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .banner_content {
+    padding: 50px 0;
+    .banner_radius {
+      margin: 0 15px;
+      .banner_text {
+        h1 {
+          font-size: 36px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .banner_radius {
+    margin: 0 15px !important;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .banner_text h1 {
+    font-size: 30px !important;
+    margin: 0;
+  }
+  .slider_main_content {
+    display: block;
+    .work_marquee_label {
+      font-size: 16px !important;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+/*=============================================
+  = Banner SCSS End
+  =============================================*/
+
+/*=============================================
+= Counter Css Start
+=============================================*/
+
+// .section {
+//   &.counter_section {
+//     padding: 120px 0;
+//   }
+// }
+
+.counter_main_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 100px 0 136px;
+}
+
+.left_section {
+  max-width: 500px;
+
+  p {
+    margin: 16px 0 48px 0;
+  }
+}
+
+h2 {
+  color: #181d20;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #d64011;
+}
+
+p {
+  color: #2a2a33;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.right_section {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.star_box_two {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.stat_box {
+  background: linear-gradient(180deg, #ffcbdf 0%, #fed3c8 100%);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 50%;
+  width: 100%;
+  height: 234px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  h2 {
+    color: #2a2a33;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 22px;
+  }
+
+  h3 {
+    color: #181d20;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1322px) {
+  .stat_box h3 {
+    font-size: 62px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .stat_box {
+    padding: 16px;
+    height: 180px;
+  }
+
+  section.counter_section {
+    padding: 80px 0;
+  }
+
+  .star_box_two {
+    gap: 16px;
+  }
+
+  .right_section {
+    gap: 16px;
+  }
+}
+
+@media only screen and (max-width: 1082px) {
+  .left_section {
+    max-width: 446px;
+
+    h2 {
+      font-size: 42px;
+    }
+  }
+
+  .stat_box h3 {
+    font-size: 50px;
+  }
+
+  .stat_box h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .left_section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .star_box_two {
+    width: 100%;
+  }
+
+  .right_section {
+    width: 100%;
+    margin-top: 34px;
+  }
+
+  .counter_section .header_btn_info {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .counter_main_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .stat_box h2 {
+    font-size: 18px;
+  }
+
+  .left_section h2 {
+    font-size: 38px;
+  }
+
+  .left_section p {
+    font-size: 16px;
+    margin: 16px 0 26px 0;
+  }
+
+  section.counter_section {
+    padding: 50px 0;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .left_section h2 {
+    font-size: 30px;
+  }
+
+  .left_section p {
+    font-size: 16px;
+    margin: 10px 0 20px 0;
+  }
+
+  .stat_box h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .stat_box h3 {
+    font-size: 38px;
+  }
+}
+
+/*=============================================
+= Counter Css End
+=============================================*/
+/*=============================================
+= Bg remover Css Start
+=============================================*/
+.editing_remover_main_section {
+  .banner_radius {
+    background-image: url('../../assets/images/bg-remover-image.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+
+    @media only screen and (max-width: 556px) {
+      margin: 0;
+    }
+  }
+  .editing_section {
+    display: flex;
+    align-items: flex-end;
+    padding: 80px 0 0;
+
+    h2 {
+      max-width: 60%;
+      width: 100%;
+    }
+
+    p {
+      color: #2a2a33;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      max-width: 40%;
+      width: 100%;
+    }
+  }
+}
+.background_remover_text {
+  h3 {
+    color: #181d20;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #2a2a33;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 432px;
+  }
+}
+
+.feature_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 89px 0;
+
+  .image_block {
+    max-width: 60%;
+    position: relative;
+
+    &.image_background_remover {
+      margin-right: 64px;
+    }
+  }
+
+  .text_block {
+    max-width: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .overlay_image {
+    img {
+      position: absolute;
+      top: 0;
+      left: -85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .overlay_text {
+    position: absolute;
+    bottom: 10px;
+    left: -40%;
+    background-color: #fff;
+    padding: 14px 23px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16.4px 0px rgba(0, 0, 0, 0.15);
+
+    p {
+      color: #353434;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+  }
+
+  .bg_remover_button {
+    position: relative;
+
+    .bg_remover_arrow_btn {
+      img {
+        position: absolute;
+        max-width: 53px;
+        width: 100%;
+        left: 45%;
+        top: -48px;
+      }
+    }
+  }
+}
+
+.generative_section {
+  max-width: 1078px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  .background_text {
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+  }
+
+  p {
+    padding-top: 16px;
+  }
+}
+
+.new_badge {
+  display: inline-block;
+  border-radius: 44px;
+  background-color: #fed4c6;
+  color: #d64011;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 6px 16px;
+  margin-bottom: 24px;
+}
+.ai_image_generator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+
+  .ai_image_generator_images {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.object_remover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text_speech {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0 0;
+}
+
+@media only screen and (max-width: 1440px) {
+  h2 {
+    font-size: 48px;
+  }
+
+  .object_remover {
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .image_background_remover {
+    margin-right: 30px;
+  }
+
+  .feature_section {
+    padding: 80px 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .editing_section p {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .editing_section h2 {
+    max-width: 100%;
+  }
+
+  .editing_section {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .feature_section {
+    display: inline-block;
+  }
+
+  .text_block {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .image_block {
+    max-width: 100%;
+  }
+
+  .feature_section {
+    padding: 60px 0;
+  }
+
+  .generative_section {
+    padding-top: 35px;
+  }
+
+  .ai_image_generator {
+    display: inline-block;
+    text-align: center;
+    padding: 60px 0;
+  }
+
+  .ai_image_generator .header_btn_info {
+    justify-content: center;
+    margin-bottom: 44px;
+  }
+
+  .object_remover {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .background_remover_text {
+    text-align: center;
+  }
+
+  .object_remover .header_btn_info {
+    justify-content: center;
+  }
+
+  .text_speech {
+    display: inline-block;
+    text-align: center;
+    padding: 60px 0;
+    width: 100%;
+  }
+
+  .text_speech .header_btn_info {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 837px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .generative_section {
+    padding-top: 22px;
+  }
+
+  .generative_section br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .background_remover_text .header_btn_info {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 632px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .editing_section {
+    padding: 50px 0 0;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .background_remover_text h3 {
+    font-size: 24px;
+  }
+
+  .background_remover_text p {
+    font-size: 16px;
+    margin-bottom: 22px;
+  }
+
+  .image_background_remover {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .editing_section p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 324px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
+/*=============================================
+= Bg remover Css End
+=============================================*/
+
+/*=============================================
+= Imagination CSS start
+=============================================*/
+
+.imagination_section {
+  padding: 100px 0 0px;
+  .banner_radius {
+    padding-bottom: 80px;
+    background-image: url('../src/assets/images/imagination-bg.svg');
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+}
+
+/*=============================================
+= Accordian Css Start
+=============================================*/
+section.accordion_section {
+  padding: 100px 0;
+
+  @media only screen and (max-width: 991px) {
+    padding: 60px 0;
+  }
+}
+
+.main_accordion_content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @media only screen and (max-width: 991px) {
+    display: inline-block;
+  }
+}
+
+.accordion_text {
+  max-width: 40%;
+  width: 100%;
+  position: relative;
+  .accordian_position_img img {
+    position: absolute;
+    top: -66px;
+    right: 0;
+
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  h2 {
+    margin-bottom: 24px;
+  }
+
+  .highlight {
+    color: #d64011;
+    display: block;
+
+    @media only screen and (max-width: 991px) {
+      display: inline-block;
+    }
+  }
+
+  p {
+    max-width: 432px;
+
+    @media only screen and (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+
+  img {
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+}
+
+.accordion {
+  max-width: 60%;
+  width: 100%;
+
+  @media only screen and (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+
+.accordion_item {
+  background-color: #ffe5dd;
+  border-radius: 12px;
+  padding: 24px 32px;
+  cursor: pointer;
+  margin-bottom: 27px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .accordion_item_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      color: #181d20;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.1;
+
+      @media only screen and (max-width: 1399px) {
+        font-size: 22px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: 20px;
+      }
+
+      @media only screen and (max-width: 468px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .accordion_item_body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #fff;
+  }
+}
+
+/*=============================================
+= Accordian Css End
+=============================================*/
+/*=============================================
+= Pricing Css Start
+=============================================*/
+section.pricing {
+  .banner_radius {
+    background-image: url('../../assets/images/pricing-bg.svg');
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: 556px) {
+      margin: 0px 0px;
+    }
+  }
+
+  .pricing_content {
+    max-width: 50%;
+    width: 100%;
+  }
+
+  .plan_details {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+  }
+
+  .pricing_content h3 {
+    color: #8256ff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .pricing_plan_list {
+    margin-top: 24px;
+
+    ul {
+      li {
+        display: flex;
+        margin-bottom: 32px;
+
+        p {
+          color: #2a2a33;
+          font-family: Satoshi;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.3;
+          width: 100%;
+          max-width: 462px;
+        }
+
+        .pricing_plan_list_img {
+          border-radius: 6px;
+          background: #e7e0ff;
+          padding: 6px;
+          margin-right: 16px;
+          height: fit-content;
+        }
+      }
+    }
+  }
+
+  .pricing_plan_list_logo {
+    margin-top: 8px;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .plan_options {
+    display: flex;
+
+    .trial_main_plan {
+      max-width: 50%;
+      width: 100%;
+      border-radius: 12px;
+      border: 2px solid #fff;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      height: 100%;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      h4 {
+        color: #181d20;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-bottom: 8px;
+      }
+
+      .credits {
+        border-radius: 4px;
+        background: linear-gradient(
+          91deg,
+          rgba(254, 212, 198, 0.8) 0.77%,
+          rgba(220, 234, 255, 0.8) 57.02%,
+          rgba(213, 198, 255, 0.8) 128.62%
+        );
+        display: inline-block;
+        padding: 5px;
+        margin-bottom: 20px;
+        color: #3f3f3f;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1;
+      }
+
+      h3 {
+        color: #181d20;
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: 20px;
+
+        span {
+          color: #181d20;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 0.8;
+        }
+      }
+
+      button {
+        border-radius: 8px;
+        border: 1px solid #8256ff;
+        width: 100%;
+        margin-top: 20px;
+        background-color: transparent;
+        padding: 14px;
+        color: #8256ff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      ul {
+        margin-bottom: 16px;
+
+        li {
+          color: #2a2a33;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.2;
+          margin-bottom: 12px;
+        }
+      }
+
+      h5 {
+        color: #8256ff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 20px;
+      }
+
+      .subscription_plan {
+        button {
+          background: #8256ff;
+          color: #fff;
+        }
+      }
+    }
+
+    .best_value {
+      border-radius: 0px 0px 12px 12px;
+      background: #2a2a33;
+      padding: 7px 24px;
+      max-width: fit-content;
+      margin: 0 auto 91px;
+
+      h6 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .plan_options .trial_main_plan {
+      margin-right: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .plan_details {
+      flex-direction: column;
+    }
+
+    .pricing_content {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 896px) {
+    .plan_options {
+      flex-direction: column;
+
+      .trial_main_plan {
+        max-width: 100%;
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .pricing_content {
+      max-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .plan_options .trial_main_plan {
+      padding: 22px;
+    }
+
+    .trial_main_plan h3 {
+      font-size: 32px;
+    }
+
+    .trial_main_plan h4 {
+      font-size: 22px;
+    }
+
+    .best_value {
+      margin: 0 auto 50px;
+    }
+  }
+
+  .subscription_plan_radio_list {
+    display: flex;
+    align-items: center;
+
+    span {
+      border: 1px dashed #2a2a33;
+      max-width: 90px;
+      width: 100%;
+      display: block;
+      margin: 0 6px;
+    }
+  }
+}
+
+/*=============================================
+= Pricing Css End
+=============================================*/
+
+/*=============================================
+= Home page Css Start
+=============================================*/
+
+.home_page_main_slider {
+  // animation: slide 30s linear infinite;
+  display: flex;
+  padding: 100px 0;
+  overflow: hidden;
+  width: 100%;
+
+  @media only screen and (max-width: 991px) {
+    padding: 80px 0;
+  }
+}
+
+.home_page_main_img {
+  padding: 0 12px;
+  width: 100%;
+
+  img {
+    max-width: 390px;
+    width: 100%;
+  }
+}
+
+/*=============================================
+= Home page Css End
+=============================================*/

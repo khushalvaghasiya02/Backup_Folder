@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="name" type="text" placeholder="Enter Your Name">
+    <input id="address" type="text" placeholder="Enter Your Address">
+    <input id="age" type="number" placeholder="Enter Your Age">
+    <button type="submit" onclick="submitForm()">Please Submit Form</button>
+    <p id="error" style="color: red;"></p>
+    
+    <hr />
+    <p>User Information</p>
+    <button onclick="getUserInfo()">Get User Data</button>
+    <p id="test_name"></p>
+    <p id="test_address"></p>
+    <p id="test_age"></p>
+</body>
+<script>
+    function submitForm() {
+        let name = document.getElementById('name').value
+        let address = document.getElementById('address').value
+        let age = document.getElementById('age').value
+        try {
+            if (name && address && age) {
+                alert('Form Submitted !!')
+                document.getElementById('error').innerHTML = ''
+                let userData = {
+                    userName: name,
+                    address,
+                    age
+                }
+
+                localStorage.setItem('userInformation', JSON.stringify(userData))
+            } else {
+                throw 'please fill this form'
+            }
+        } catch (error) {
+            document.getElementById('error').innerHTML = error
+        }
+
+    }
+
+    function getUserInfo() {
+        let userdata = JSON.parse(localStorage.getItem('userInformation'))
+        document.getElementById('test_name').innerHTML = userdata.userName ?? 'Something went to wrong'
+        document.getElementById('test_age').innerHTML = userdata.age ?? 'Something went to wrong'
+    }
+</script>
+
+</html>

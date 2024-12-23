@@ -1,0 +1,52 @@
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    margin: 50px 0px;
+}
+
+.images-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.images .full-size {
+    width: 50%;
+    height: 100%;
+}
+
+.images .full-size .full-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.images .images-list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.images .images-list .twins {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.images .images-list .images-list-item {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.images .images-list .twins .twins-item {
+    width: 300px;
+    height: 343px;
+    object-fit: cover;
+}

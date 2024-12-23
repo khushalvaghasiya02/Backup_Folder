@@ -1,0 +1,340 @@
+section.sec__unsubscribe_wrapper {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px 0px 100px;
+
+    .mb_30 {
+        margin-bottom: 30px;
+    }
+
+    .account_bg_wrap {
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+        padding: 20px 92px;
+
+        .account_title {
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+
+            h2 {
+                width: 100%;
+                display: inline-block;
+                vertical-align: top;
+                border-bottom: 1px solid rgba(217, 217, 217, 0.7);
+                margin: 0px 0px;
+                margin-bottom: 30px;
+                padding-bottom: 16px;
+                color: #000;
+                font-family: 'Satoshi';
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+            }
+        }
+
+        .account_info_inner {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .wi-50 {
+                max-width: 50%;
+                flex: 0 0 50%;
+            }
+
+            .account_border {
+                width: calc(100% - 15px);
+                display: inline-block;
+                vertical-align: top;
+                border-bottom: 1px solid #D8D8D8;
+                padding-bottom: 22px;
+
+                strong {
+                    width: 100%;
+                    font-family: 'Satoshi';
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 1.1;
+                    color: #878787;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    width: 100%;
+                    display: inline-block;
+                    vertical-align: top;
+                    margin: 0px 0px;
+                }
+
+                a {
+                    width: 100%;
+                    font-family: 'Satoshi';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 1.1;
+                    color: #2A2A33;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .account_title h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .account_bg_wrap {
+        padding: 15px 15px !important;
+    }
+
+    .wpb_content_account {
+        .account_info_inner {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            .account_address {
+                strong {
+                    width: auto;
+                }
+
+                p {
+                    width: auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.account_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-bottom: 30px;
+
+    .field_account {
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            border-radius: 6px;
+            font-family: 'Satoshi';
+            border: 1px solid #C9B6FF;
+            background: #FAF9FE;
+            padding: 14px 18px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.125;
+            outline: none;
+            color: #2A2A33;
+            -webkit-appearance: none;
+        }
+
+        input[type="text"]::placeholder,
+        input[type="number"]::placeholder,
+        select::placeholder {
+            color: #9ea8bd;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0px 0px;
+        }
+
+        &:last-child {
+            grid-column: 1 / -1;
+        }
+
+        label.lbl_wpb_wrapper {
+            width: 100%;
+            font-family: 'Satoshi';
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.1;
+            color: #2A2A33;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .address {
+        grid-column: 1 / 3;
+    }
+}
+
+button.payment__account {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    padding: 13px 15px;
+    color: #ffffff;
+    background-color: #8256FF;
+    border: 1px solid #8256FF;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+button.payment__account:hover {
+    background-color: transparent;
+    border: 1px solid #8256FF;
+    color: #8256FF;
+}
+
+@media only screen and (max-width: 625px) {
+    .account_container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+
+        .field_account.address {
+            grid-column: 1 / 1;
+        }
+    }
+
+}
+
+.wpb_info_wrapper {
+    padding: 29px 0px 20px;
+}
+
+.subscriptions_info_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        color: #2A2A33;
+        font-family: 'Satoshi';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    button.end__subscriptions {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        padding: 9px 10px;
+        cursor: pointer;
+        border-radius: 6px;
+        border: 1px solid #8256FF;
+        color: #8256FF;
+        background-color: transparent;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: #FFFFFF;
+            background-color: #8256FF;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .account_bg_wrap {
+        padding: 20px 50px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .account_bg_wrap {
+        padding: 20px 20px !important;
+    }
+
+    .wpb_content_account .account_address strong {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .wpb_content_account {
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .wpb_content_account .account_info_inner {
+        flex-wrap: wrap;
+
+        .wi-50 {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .account_address {
+            .account_border {
+                border-bottom: unset;
+                padding-bottom: 0px;
+            }
+
+            &:first-child {
+                border-bottom: 1px solid rgba(119, 119, 119, 0.1);
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    section.sec__unsubscribe_wrapper {
+        padding: 30px 0px 50px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+
+    .subscriptions_info_wrap {
+        flex-wrap: wrap;
+
+        button.end__subscriptions {
+            width: 100%;
+            padding: 13px 10px;
+            line-height: 1;
+            margin-top: 20px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .wpb_content_account {
+        .account_address{
+            p{
+                a{
+
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/*=============================================
+  = My Account Css
+  =============================================*/

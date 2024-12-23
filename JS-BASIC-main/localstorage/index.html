@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Task List</h1>
+  <input type="text" id="taskInput" placeholder="Add a new task">
+  <button onclick="addTask()">Add Task</button>
+
+  <ul id="taskList"></ul>
+</body>
+<script>
+
+  // Function to add a task to local storage and display it on the page
+  function addTask() {
+    const taskInput = document.getElementById("taskInput");
+    const taskText = taskInput.value.trim();
+
+    if (taskText !== "") {
+      // Retrieve existing tasks from local storage
+      const existingTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+      // Add the new task
+      existingTasks.push(taskText);
+
+      // Update local storage with the new tasks
+      localStorage.setItem("tasks", JSON.stringify(existingTasks));
+
+      // Clear the input field
+      taskInput.value = "";
+
+      // Refresh the task list
+      displayTasks();
+    }
+  }
+
+  // Function to display tasks from local storage on the page
+  function displayTasks() {
+    const taskList = document.getElementById("taskList");
+    const existingTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+    // Clear the existing task list
+    taskList.innerHTML = "";
+
+    // Loop through the tasks and display them
+    // existingTasks.forEach();
+    existingTasks.map((task, id) => {
+      const li = document.createElement("li");
+      li.textContent = task;
+
+      // Add a delete button for each task
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Delete Record";
+      deleteButton.onclick = () => deleteTask(id);
+
+      li.appendChild(deleteButton);
+      taskList.appendChild(li);
+    })
+  }
+
+  // Function to delete a task from local storage and update the display
+  function deleteTask(id) {
+    const existingTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    if (id >= 0 && id < existingTasks.length) {
+      // Remove the task at the specified index
+      existingTasks.splice(id, 1);
+
+      // Update local storage with the modified tasks
+      localStorage.setItem("tasks", JSON.stringify(existingTasks));
+
+      // Refresh the task list
+      displayTasks();
+    }
+  }
+
+  // Initialize the task list when the page loads
+  displayTasks();
+ 
+</script>
+
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+<h1 id="demo"></h1>
+</body>
+  <script>
+    let result = 90;
+    switch (result) {
+      case 33:
+        result = "33% better luck next time";
+        break;
+      case 50:
+        result = "50% not good";
+        break;
+      case 70:
+        result = "Good 70%";
+        break;
+      case 80:
+        result = "Very Good 80%";
+        break;
+      case 90:
+        result = "Very Very Very Good 90%";
+        break;
+    }
+    document.getElementById("demo").innerHTML = "Result is " + result;
+  </script>
+</html>

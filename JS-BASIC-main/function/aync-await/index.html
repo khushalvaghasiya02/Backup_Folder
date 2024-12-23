@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="googleLogin('Uday','khunt')">Google Login</button>
+    <button onclick="removeData()">Rempve Google Login</button>
+    <button onclick="changeColor()">Change Color on click</button>
+    <p id="count"></p>
+    <h1 id="g_name"></h1>
+</body>
+    <script>
+        // function waitForR(){
+        //     return new Promise((resolve) => {
+        //         setInterval(() => {
+        //             resolve('resolve')
+        //         }, 3000);
+        //     })
+        // }
+
+        // async function getData(){
+        //     console.log('calling.......');
+        //     const result = await waitForR()
+        //     console.log(result,'result'); 
+        // }
+
+        // getData()
+
+
+        //  Auto Call Function
+
+        // let data = 4 + 4
+        // console.log(data,'data 32');
+
+            
+
+
+
+
+        function googleLogin(fname, lname){
+            let fullname = fname + " " + lname 
+            document.getElementById('g_name').innerHTML = fullname
+        }
+
+
+
+        (function calculate(){
+            let data = 'Wait For First name' + ' ..... '+'Wait For Last Name please click on google login'
+            document.getElementById('count').innerHTML = data
+        })()
+
+        function removeData(){
+            document.getElementById('g_name').innerHTML = ''
+        }
+
+        function changeColor(){
+            let data = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+            document.getElementById('g_name').style.color = data
+        }
+
+        setInterval(() => {
+            changeColor()
+        }, 1000);
+
+
+    </script>
+
+</html>
